@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .button {
+        width: 120px;
+        height: 120px;
+        border: 2px solid;
+      }
+      h1{
+        text-align: center;
+      }
+      #yellow {
+        background-color: yellow;
+      }
+      #grey {
+        background-color: gray;
+      }
+      #blue {
+        background-color: blue;
+      }
+      #white{
+        background-color: #fff;
+      }
+      #pink{
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Color Switcher</h1>
+    <div class="outer-box">
+    <div class="button" id="grey"></div>
+    <div class="button" id="blue"></div>
+    <div class="button" id="yellow"></div>
+    <div class="button" id="white"></div>
+    <div class="button" id="pink"></div>
+    
+</div>
+<h1>Try clicking on one of the colors above to change the background color of this page!</h1>
+    <script>
+        const button=document.querySelectorAll(".button")
+        const body=document.querySelector("body");
+        button.forEach((btn)=>{
+            console.log(btn);
+          btn.addEventListener('click',function(e){
+            if(e.target.id==="blue"){
+                body.style.backgroundColor=e.target.id;
+            }
+           else if(e.target.id==="grey"){
+                body.style.backgroundColor=e.target.id;
+            }
+           else if(e.target.id==="yellow"){
+                body.style.backgroundColor=e.target.id;
+            }
+            if(e.target.id==="white"){
+                body.style.backgroundColor=e.target.id;
+            }
+            if(e.target.id==="pink"){
+                body.style.backgroundColor=e.target.id;
+            }
+          })
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learning</title>
+</head>
+<body bgcolor="#212121"; style="color: #fff;">
+    <div class="bg-black">
+        <h1 class="heading">DOM Learning</h1>
+        <p id="para">Lorem ipsum dolor sit amet.</p> 
+        <ul class="main">
+            <li>Java</li>
+            <li>Cpp</li>
+            <li>php</li>
+            <li>js</li>
+        </ul>
+      
+       
+    <script>
+      
+      const li=document.querySelectorAll("li");
+      console.log(li);
+    const newArr=Array.from(li)
+    console.log(newArr);
+    newArr.pop()
+    console.log(newArr.length);
+       
+//        function addLang1(lang){
+       
+//        const li=document.createElement('li');
+//        li.appendChild(document.createTextNode(lang))
+//        document.querySelector('.main').appendChild(li)
+//          }  
+//        addLang('python')
+//        addLang('javascript')
+//        addLang1("golang")
+//        addLang1("Cpp")
+//     const second=document.querySelector("li:nth-child(2)")
+//    const newli=document.createElement("li")
+//    newli.textContent="MOjo"
+//    second.replaceWith(newli)
+//    //edit
+//    const firstlang=document.querySelector("li:first-child")
+//    const nl=document.createElement("li")
+//    nl.textContent="PHP"
+// const lastChild=document.querySelector("li:last-child")
+//    console.log(lastChild)
+//    lastChild.remove()
+    </script>
+</body>
+</html>
